@@ -1,32 +1,39 @@
-import React, { createContext, useContext, useReducer } from 'react'
+import React, { createContext, useReducer} from 'react'
 
 import GlobalReducer from '../reducer/globalReducer'
 
-import { IncomeContext } from './incomeContext'
-
-import { MyIncome } from '../components/income/MyIncome'
-
-const initialContext = {
-    history:
-        [
-            income.map(income => (
-                <MyIncome key={income.id} income={income} />
-            ))
-        ]
+const initialAmount = {
+    transaction: []
 }
 
-export const GlobalContext = createContext(initialContext);
-
+export const GlobalContext = createContext(initialAmount);
 
 export const GlobalProvider = ( { children } ) => {
 
-    const [state] = useReducer(GlobalReducer, initialContext)
+    const [state, dispatch] = useReducer(GlobalReducer, initialAmount)
+
+    function delTransaction(id) {
+        dispatch({
+            type: 'DEL_TRANSACTION',
+            payload: id
+        });
+    }
+
+    function newTransaction(transaction) {
+        dispatch({
+            type: 'NEW_TRANSACTION',
+            payload: transaction
+        })
+    }
+
 
     return (
         <GlobalContext.Provider
             value={
                 {
-                    income: state.income
+                    transaction: state.transaction,
+                    delTransaction,
+                    newTransaction
                 }
             }
         >
@@ -34,4 +41,3 @@ export const GlobalProvider = ( { children } ) => {
         </GlobalContext.Provider>
     );
 };
-
