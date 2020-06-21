@@ -1,0 +1,267 @@
+
+
+body {
+  background-color: whitesmoke;
+}
+
+h2 {
+  font-family: 'Comic Neue', cursive;
+}
+
+h3 {
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+h4 {
+  font-family: 'Source Code Pro', monospace;
+}
+
+.ulli {
+  margin: 2%;
+  list-style: none;
+}
+
+.ulli span {
+  float: right;
+}
+
+/* Navbar */
+
+#navbar ul {
+  margin-left: 0px;
+}
+
+#navbar li {
+  margin: 5px;
+  font-size: larger;
+  display: inline;
+}
+
+.link {
+  margin-left: 10px;
+  color: black !important;
+}
+
+#heading {
+  font-size: x-large !important;
+  font-family: 'Comic Neue', cursive;
+}
+
+/* home */
+
+#home {
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+#summary {
+  width: 40%;
+  height: 60vh;
+  float: left;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px 2%;
+}
+
+#summary h2 {
+  margin-top: 2%;
+}
+
+#currentBalance {
+  border: 0px;
+  height: 20vh;
+  margin: 4%;
+  border-radius: 25px;
+  box-shadow: lightgray 5px 5px 10px 10px;
+}
+
+#currentIncome {
+  float: left;
+  height: 20vh;
+  border: 0px;
+  margin: 4% 3%;
+  border-radius: 25px;
+  box-shadow: lightgray 5px 5px 10px 10px;
+}
+
+#currentExpense {
+  height: 20vh;
+  float: right;
+  border: 0px;
+  margin: 4% 3%;
+  border-radius: 25px;
+  box-shadow: lightgray 5px 5px 10px 10px;
+}
+
+#details {
+  width: 50%;
+  height: 60vh;
+  float: right;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px 2%;
+}
+
+/* income */
+
+#income {
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+#income h2 {
+  margin-top: 10px;
+}
+
+#totalIncome {
+  width: 35%;
+  height: 60vh;
+  float: left;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px 2%;
+}
+
+#totalIncome h2 {
+  margin-top: 20%;
+}
+
+#sourceOfIncome {
+  width: 55%;
+  height: 60vh;
+  float: right;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px 2%;
+}
+
+/* Expense */
+
+#expense {
+  height: 60vh;
+  margin-top: 10vh;
+}
+
+#totalExpense {
+  width: 35%;
+  height: 60vh;
+  float: left;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px 2%;
+}
+
+#MyExpense {
+  width: 55%;
+  height: 60vh;
+  float: right;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px 2%;
+}
+
+#expense h2 {
+  margin-top: 10px;
+}
+
+#totalExpense h2 {
+  margin-top: 20%;
+}
+
+
+/* Footer */
+
+@media only screen and (max-width: 786px) {
+
+
+#navbar li {
+  margin: 5px;
+  font-size: larger;
+  display: inline;
+}
+
+.link {
+  margin-left: 10px;
+  color: black;
+}
+
+#heading {
+  font-size: x-large !important;
+  font-family: 'Comic Neue', cursive;
+}
+
+#income {
+  height: 70vh;
+  margin-top: 10vh;
+}
+
+#totalIncome {
+  width: 90%;
+  height: 30vh;
+  float: left;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0 5%;
+}
+
+#sourceOfIncome {
+  width: 90%;
+  height: 40vh;
+  float: right;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 5%;
+}
+
+}
+
+@media only screen and (max-width: 425px) {
+
+#navbar {
+  margin-left: 0px !important;
+}
+
+#navbar li {
+  margin: 5px;
+  font-size: medium;
+  display: inline;
+}
+
+.link {
+  margin-left: 0px;
+  color: black;
+}
+
+#heading {
+  margin-left: 0px !important;
+  font-size: large !important;
+  font-family: 'Comic Neue', cursive;
+}
+
+#income {
+  height: 70vh;
+  margin-top: 10vh;
+}
+
+#totalIncome {
+  width: 90%;
+  height: 30vh;
+  float: left;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 0px 5%;
+}
+
+#sourceOfIncome {
+  width: 90%;
+  height: 40vh;
+  float: right;
+  border: 1px solid black;
+  border-radius: 25px;
+  margin: 5%;
+}
+
+
+
+}
+
