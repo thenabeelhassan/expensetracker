@@ -34,16 +34,18 @@ export const TransactionDetail = () => {
                     id="transactionDetail"
                     value={transactionDetail}
                     onChange={(e) => settransactionDetail(e.target.value)}
-                    placeholder="Detail of Transaction" 
+                    placeholder="Detail" 
                     required="required"
+                    size='10'
                 />
                 <input  
                     type="text" 
                     id="transactionAmount"
                     value={transactionAmount}
                     onChange={(e) => setTransactionAmount(e.target.value)}
-                    placeholder="Value of Transaction"
+                    placeholder="Amount"
                     required="required"
+                    size='10'
                 />
                 <button>
                     Add

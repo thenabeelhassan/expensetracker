@@ -130,6 +130,7 @@ form input {
 #social {
   float: right;
   font-size: xx-large;
+  font-size: large;
 }
 
 #social a {
@@ -142,16 +143,20 @@ form input {
 /* Header */
 
 #header {
-  height: 15vh;
+  height: 10vh;
   padding: 2%;
 }
 
 /* Body */
 
+#body {
+  height: 80vh;
+}
+
 #summary {
-  width: 40%;
-  height: 60vh;
-  float: left;
+  width: 95%;
+  height: 40vh;
+  float: none;
   border: 1px solid black;
   border-radius: 25px;
   margin: 0px 2%;
@@ -163,7 +168,7 @@ form input {
 
 #currentBalance {
   border: 0px;
-  height: 20vh;
+  height: 12vh;
   margin: 4%;
   border-radius: 25px;
   box-shadow: lightgray 5px 5px 10px 10px;
@@ -171,7 +176,7 @@ form input {
 
 #currentIncome {
   float: left;
-  height: 20vh;
+  height: 12vh;
   border: 0px;
   margin: 4% 3%;
   border-radius: 25px;
@@ -179,7 +184,7 @@ form input {
 }
 
 #currentExpense {
-  height: 20vh;
+  height: 12vh;
   float: right;
   border: 0px;
   margin: 4% 3%;
@@ -187,80 +192,115 @@ form input {
   box-shadow: lightgray 5px 5px 10px 10px;
 }
 
-#details {
-  width: 50%;
-  height: 60vh;
-  float: right;
+#detail {
+  width: 95%;
+  height: 40vh;
+  float: none;
   border: 1px solid black;
   border-radius: 25px;
-  margin: 0px 2%;
+  margin: 1% 2%;
+}
+
+.history {
+  height: 30vh;
+}
+
+.history section {
+  height: 25vh;
+  overflow-y: scroll;
+}
+
+ul li {
+  margin: 2%;
+  list-style: none;
+}
+
+ul li span {
+  float: right;
+}
+
+ul li button {
+  float: right;
+  background-color: red;
+  border: 0px;
+  border-radius: 5px;
+  font-size: large;
+  color: whitesmoke;
+  margin-left: 2%;
+}
+
+form {
+  margin: 2%;
+}
+
+form input {
+  margin: 2%;
 }
 
 /* Footer */
+
+#footer {
+  height: 10;
+  padding: 2%;
+}
+
+#copyrights {
+  float: left;
+  padding: 1%;
+  font-size: large;
+}
+
+#social {
+  float: right;
+  font-size: xx-large;
+}
+
+#social a {
+  margin: 0px 5px;
+  color: black;
+}
 
 }
 
 @media only screen and (max-width: 425px) {
 
-
-/* Header */
-
-#header {
-  height: 15vh;
-  padding: 2%;
+form input {
+  width: 30%;
 }
 
-/* Body */
-
-#summary {
-  width: 40%;
-  height: 60vh;
-  float: left;
-  border: 1px solid black;
-  border-radius: 25px;
-  margin: 0px 2%;
-}
-
-#summary h2 {
-  margin-top: 2%;
-}
-
-#currentBalance {
-  border: 0px;
-  height: 20vh;
-  margin: 4%;
-  border-radius: 25px;
-  box-shadow: lightgray 5px 5px 10px 10px;
-}
-
-#currentIncome {
-  float: left;
-  height: 20vh;
-  border: 0px;
-  margin: 4% 3%;
-  border-radius: 25px;
-  box-shadow: lightgray 5px 5px 10px 10px;
-}
-
-#currentExpense {
-  height: 20vh;
-  float: right;
-  border: 0px;
-  margin: 4% 3%;
-  border-radius: 25px;
-  box-shadow: lightgray 5px 5px 10px 10px;
-}
-
-#details {
-  width: 50%;
-  height: 60vh;
-  float: right;
-  border: 1px solid black;
-  border-radius: 25px;
-  margin: 0px 2%;
+form span {
+  font-size: small;
 }
 
 /* Footer */
 
+#footer {
+  height: 10;
+  padding: 3%;
 }
 
+#copyrights {
+  float: left;
+  padding: 1%;
+  font-size: small;
+}
+
+#social {
+  float: right;
+  font-size: x-large;
+}
+
+#social a {
+  margin: 0px 5px;
+  color: black;
+}
+
+}
+
+@media only screen and (max-width: 350px) {
+
+form span {
+  font-size: 10px;
+}
+
+}
