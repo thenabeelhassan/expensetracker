@@ -25,33 +25,33 @@ export const TransactionDetail = () => {
 
     return (
         <section>
-                <form 
-                    onSubmit={onSubmit}
-                >
-                
-                <div>
-                    <input  
-                        type="text" 
-                        id="description"
-                        value={transactionDetail}
-                        onChange={(e) => settransactionDetail(e.target.value)}
-                        placeholder="Detail of Transaction" 
-                        required="required"
-                    />
-                </div>
-                <div>
-                    <input  
-                        type="text" 
-                        id="transactionamount"
-                        value={transactionAmount}
-                        onChange={(e) => setTransactionAmount(e.target.value)}
-                        placeholder="Value of Transaction"
-                        required="required"
-                    />
-                </div>
+            <form 
+                className='col-10'
+                onSubmit={onSubmit}
+            >       
+                <input  
+                    type="text" 
+                    id="transactionDetail"
+                    value={transactionDetail}
+                    onChange={(e) => settransactionDetail(e.target.value)}
+                    placeholder="Detail of Transaction" 
+                    required="required"
+                />
+                <input  
+                    type="text" 
+                    id="transactionAmount"
+                    value={transactionAmount}
+                    onChange={(e) => setTransactionAmount(e.target.value)}
+                    placeholder="Value of Transaction"
+                    required="required"
+                />
                 <button>
                     Add
                 </button>
+                <br />
+                <span>
+                    Note: Please use '-' sign for Expense Amount
+                </span>
             </form>
         </section>
     )

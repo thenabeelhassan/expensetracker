@@ -16,15 +16,6 @@ h3 {
   font-family: 'Source Code Pro', monospace;
 }
 
-.ulli {
-  margin: 2%;
-  list-style: none;
-}
-
-.ulli span {
-  float: right;
-}
-
 /* Header */
 
 #header {
@@ -40,7 +31,7 @@ h3 {
 
 #summary {
   width: 40%;
-  height: 60vh;
+  height: 70vh;
   float: left;
   border: 1px solid black;
   border-radius: 25px;
@@ -52,44 +43,98 @@ h3 {
 }
 
 #currentBalance {
+  padding: 2%;
   border: 0px;
   height: 20vh;
-  margin: 4%;
+  margin: 5%;
   border-radius: 25px;
   box-shadow: lightgray 5px 5px 10px 10px;
 }
 
 #currentIncome {
+  padding: 2%;
   float: left;
   height: 20vh;
   border: 0px;
-  margin: 4% 3%;
+  margin: 5% 3%;
   border-radius: 25px;
   box-shadow: lightgray 5px 5px 10px 10px;
 }
 
 #currentExpense {
+  padding: 2%;
   height: 20vh;
   float: right;
   border: 0px;
-  margin: 4% 3%;
+  margin: 5% 3%;
   border-radius: 25px;
   box-shadow: lightgray 5px 5px 10px 10px;
 }
 
 #detail {
   width: 50%;
-  height: 60vh;
+  height: 70vh;
   float: right;
   border: 1px solid black;
   border-radius: 25px;
   margin: 0px 2%;
 }
 
+.history {
+  height: 55vh;
+}
+
+.history section {
+  height: 50vh;
+  overflow-y: scroll;
+}
+
+ul li {
+  margin: 2%;
+  list-style: none;
+}
+
+ul li span {
+  float: right;
+}
+
+ul li button {
+  float: right;
+  background-color: red;
+  border: 0px;
+  border-radius: 5px;
+  font-size: large;
+  color: whitesmoke;
+  margin-left: 2%;
+}
+
+form {
+  margin: 2%;
+}
+
+form input {
+  margin: 2%;
+}
+
 /* Footer */
 
 #footer {
-  height: 10vh;
+  height: 7vh;
+}
+
+#copyrights {
+  float: left;
+  padding: 1%;
+}
+
+#social {
+  float: right;
+  font-size: xx-large;
+}
+
+#social a {
+  margin: 0px 5px;
+  color: black;
 }
 
 @media only screen and (max-width: 786px) {

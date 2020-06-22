@@ -24,7 +24,7 @@ export const Balance = () => {
                     Current Balance
                 </h3>
                 <span>
-                    <CurrentBalance />
+                    Rs. <CurrentBalance />
                 </span>
             </section>
             <section
@@ -35,7 +35,7 @@ export const Balance = () => {
                     Income
                 </h3>
                 <span>
-                    <CurrentIncome />
+                    Rs. <CurrentIncome />
                 </span>
             </section>
             <section
@@ -46,7 +46,7 @@ export const Balance = () => {
                     Expense
                 </h3>
                 <span>
-                    <CurrentExpense />
+                    Rs. <CurrentExpense />
                 </span>
             </section>
         </section>
