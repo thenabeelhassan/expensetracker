@@ -1,0 +1,40 @@
+{
+  "name": "expensetracker-backend",
+  "version": "1.0.0",
+  "description": "Backend of Expense Tracker application",
+  "keywords": [
+    "expensetracker",
+    "docker",
+    "node",
+    "nodejs",
+    "backend",
+    "mern"
+  ],
+  "homepage": "https://github.com/thenabeelhassan/expensetracker#readme",
+  "bugs": {
+    "url": "https://github.com/thenabeelhassan/expensetracker/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thenabeelhassan/expensetracker.git"
+  },
+  "license": "ISC",
+  "author": "Nabeel Hassan <thenabeelhassan@gmail.com>",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+  "start": "node index.js",
+  "dev": "nodemon index.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.17.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.10"
+  }
+}

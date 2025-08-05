@@ -1,0 +1,88 @@
+.dashboard-container {
+  font-family: sans-serif;
+  padding: 1rem;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.logout-btn {
+  background-color: white;
+  color: #007bff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.logout-btn:hover {
+  background-color: #e9ecef;
+}
+
+.dashboard-main {
+  margin-top: 2rem;
+}
+
+.balance-section,
+.add-expense-section,
+.transactions-section {
+  background: #f8f9fa;
+  margin-bottom: 1.5rem;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.add-expense-section form {
+  display: flex;
+  flex-direction: column;
+}
+
+.add-expense-section input {
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-expense-section button {
+  padding: 0.5rem;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-expense-section button:hover {
+  background-color: #218838;
+}
+
+.transactions-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transactions-section li {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.transaction-del-btn {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #FF0000
+}
