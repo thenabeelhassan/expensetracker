@@ -73,6 +73,31 @@ const Dashboard = () => {
     navigate('/login');
   };
 
+  const handleExportPDF = async () => {
+    try {
+      const token = localStorage.getItem('token');
+
+      const response = await API.get('/reports/pdf', {
+        headers: {
+          Authorization: `Bearer ${token}`,
+        },
+        responseType: 'blob', // Important for binary data
+      });
+
+      // Create a blob URL and trigger a download
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const link = document.createElement('a');
+      link.href = url;
+      link.setAttribute('download', 'Expense_Report.pdf');
+      document.body.appendChild(link);
+      link.click();
+      link.remove();
+    } catch (error) {
+      console.error('Error downloading PDF:', error);
+      alert('Failed to export PDF report.');
+    }
+  };
+
   return (
     <div className="dashboard-container">
       <header className="dashboard-header">
@@ -119,6 +144,9 @@ const Dashboard = () => {
 
         <section className="transactions-section">
           <h3>Transaction History</h3>
+          <button className="export-btn" onClick={handleExportPDF}>
+            <FontAwesomeIcon icon="file-pdf" /> Export as PDF
+          </button>
           <ul>
             {transactions.map((tx) => (
               <li key={tx._id}>

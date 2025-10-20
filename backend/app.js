@@ -18,10 +18,12 @@ mongoose
 // Import Routes
 const expenseRoutes = require('./routes/expenseRoutes');
 const authRoutes = require("./routes/auth");
+const reportRoutes = require("./routes/reportRoutes")
 
 // Use Routes
 app.use("/api/auth", authRoutes);
 app.use('/api/expenses', expenseRoutes);
+app.use('/api/reports', reportRoutes);
 
 app.get('/', (req, res) => {
   res.send('Expense Tracker API');
